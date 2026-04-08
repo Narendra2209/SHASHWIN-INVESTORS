@@ -6,7 +6,7 @@ export default function FloatingButtons() {
       <a
         href="tel:+917032048807"
         className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center transition-all hover:-translate-y-1 hover:scale-110"
-        style={{ background: "linear-gradient(135deg, #6366f1, #818cf8)", boxShadow: "0 4px 24px rgba(99,102,241,0.4)", animation: "fab-bounce 2.4s ease-in-out infinite" }}
+        style={{ background: "linear-gradient(135deg, #1e40af, #3b82f6)", boxShadow: "0 4px 24px rgba(30,64,175,0.35)", animation: "fab-bounce 2.4s ease-in-out infinite" }}
         aria-label="Call Us"
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
@@ -16,7 +16,7 @@ export default function FloatingButtons() {
       <a
         href="https://wa.me/917032048807?text=Hi%2C%20I%20am%20interested%20in%20your%20advisory%20services."
         className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center transition-all hover:-translate-y-1 hover:scale-110"
-        style={{ background: "linear-gradient(135deg, #25D366, #128C7E)", boxShadow: "0 4px 24px rgba(37,211,102,0.4)", animation: "fab-bounce 2.4s ease-in-out infinite 0.3s" }}
+        style={{ background: "linear-gradient(135deg, #25D366, #128C7E)", boxShadow: "0 4px 24px rgba(37,211,102,0.35)", animation: "fab-bounce 2.4s ease-in-out infinite 0.3s" }}
         aria-label="WhatsApp"
         target="_blank"
         rel="noopener noreferrer"

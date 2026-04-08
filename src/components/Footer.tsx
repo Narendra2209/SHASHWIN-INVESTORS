@@ -20,21 +20,21 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-sw-surface overflow-hidden">
+    <footer className="relative bg-[#0f172a] overflow-hidden">
       {/* Top line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.04] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
 
       {/* CTA Banner */}
       <div className="relative py-20 sm:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-sw-brand/[0.03] via-transparent to-sw-accent/[0.02]" />
-        <div className="absolute inset-0 opacity-[0.012]" style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.8) 0.5px, transparent 0.5px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-amber-900/10" />
+        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.6) 0.5px, transparent 0.5px)", backgroundSize: "48px 48px" }} />
         <div className="max-w-[680px] mx-auto px-6 text-center relative z-10">
           <h2 className="text-[26px] sm:text-[34px] md:text-[42px] font-extrabold leading-[1.08] tracking-[-0.03em] mb-5">
             <span className="text-white/90">Ready to</span>{" "}
-            <span className="text-sw-accent">Elevate</span>{" "}
-            <span className="text-white/40">Your Trading?</span>
+            <span className="text-[#d4a017]">Elevate</span>{" "}
+            <span className="text-white/50">Your Trading?</span>
           </h2>
-          <p className="text-[14px] text-white/30 mb-10 max-w-md mx-auto leading-relaxed">
+          <p className="text-[14px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">
             Join hundreds of traders who trust Shashwin Investors for research-backed insights.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -50,13 +50,13 @@ export default function Footer() {
       </div>
 
       {/* Disclaimer */}
-      <div className="py-8 sm:py-10 bg-sw-disclaimer-bg border-t border-sw-disclaimer-border/20">
+      <div className="py-8 sm:py-10 bg-amber-950/30 border-t border-amber-800/20">
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="flex items-center gap-2 mb-4">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" opacity="0.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            <h3 className="text-[13px] font-bold text-sw-disclaimer-heading/70">Disclaimer</h3>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d4a017" strokeWidth="2" strokeLinecap="round" opacity="0.6"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <h3 className="text-[13px] font-bold text-[#d4a017]/80">Disclaimer</h3>
           </div>
-          <ul className="list-disc pl-5 space-y-1.5 text-[11px] sm:text-[12px] text-sw-disclaimer-text/60 leading-relaxed">
+          <ul className="list-disc pl-5 space-y-1.5 text-[11px] sm:text-[12px] text-white/35 leading-relaxed">
             <li>Investment in securities market is subject to market risk. No guaranteed profit. Past performance is not indicative of future results.</li>
             <li>Fees should only be paid to Shashwin Investors company accounts.</li>
             <li>Risk of loss in trading can be substantial. Consider whether trading is appropriate for your financial condition.</li>
@@ -66,55 +66,55 @@ export default function Footer() {
       </div>
 
       {/* Links */}
-      <div className="py-14 sm:py-16 border-t border-white/[0.03]">
+      <div className="py-14 sm:py-16 border-t border-white/[0.06]">
         <div className="max-w-[1280px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2.5 group mb-5">
-              <div className="w-8 h-8 rounded-[8px] bg-gradient-to-br from-sw-brand to-sw-accent flex items-center justify-center shadow-md">
+              <div className="w-8 h-8 rounded-[8px] bg-gradient-to-br from-[#1e40af] to-[#b8860b] flex items-center justify-center shadow-md">
                 <svg width="16" height="16" viewBox="0 0 36 36" fill="none"><path d="M10 24L16 14L20 20L26 10" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="text-[13px] font-extrabold text-white/80">Shashwin</span>
-                <span className="text-[8px] font-semibold tracking-[0.15em] uppercase text-white/20">Investors</span>
+                <span className="text-[13px] font-extrabold text-white/85">Shashwin</span>
+                <span className="text-[8px] font-semibold tracking-[0.15em] uppercase text-[#d4a017]/60">Investors</span>
               </div>
             </Link>
-            <p className="text-[11px] text-white/20 mb-1">SEBI Reg: <span className="text-sw-brand-light/30 font-semibold">INH000XXXXXX</span></p>
-            <p className="text-[12px] text-white/20 leading-relaxed">Research-backed stock market advisory by a SEBI-registered research analyst.</p>
+            <p className="text-[11px] text-white/30 mb-1">SEBI Reg: <span className="text-blue-400/50 font-semibold">INH000XXXXXX</span></p>
+            <p className="text-[12px] text-white/25 leading-relaxed">Research-backed stock market advisory by a SEBI-registered research analyst.</p>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-[11px] font-bold mb-5 text-white/30 tracking-[0.15em] uppercase">Services</h4>
+            <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Services</h4>
             <ul className="space-y-2.5">
               {serviceLinks.map((s) => (
-                <li key={s.label}><Link href={s.href} className="text-[12px] text-white/20 hover:text-white/50 transition-colors">{s.label}</Link></li>
+                <li key={s.label}><Link href={s.href} className="text-[12px] text-white/25 hover:text-blue-400/70 transition-colors">{s.label}</Link></li>
               ))}
             </ul>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="text-[11px] font-bold mb-5 text-white/30 tracking-[0.15em] uppercase">Links</h4>
+            <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Links</h4>
             <ul className="space-y-2.5">
               {usefulLinks.map((l) => (
-                <li key={l}><a href="#" className="text-[12px] text-white/20 hover:text-white/50 transition-colors">{l}</a></li>
+                <li key={l}><a href="#" className="text-[12px] text-white/25 hover:text-blue-400/70 transition-colors">{l}</a></li>
               ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-[11px] font-bold mb-5 text-white/30 tracking-[0.15em] uppercase">Contact</h4>
-            <address className="not-italic space-y-3 text-[12px] text-white/20 leading-relaxed">
+            <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Contact</h4>
+            <address className="not-italic space-y-3 text-[12px] text-white/25 leading-relaxed">
               <p>A/221, 1st Floor, Shiv Sai Co-op Housing Society, Kurla West, Mumbai, MH 400070</p>
-              <p><a href="mailto:support@shashwininvestors.com" className="text-sw-brand-light/30 hover:text-sw-brand-light/60 transition-colors">support@shashwininvestors.com</a></p>
-              <p><a href="tel:+917032048807" className="text-sw-brand-light/30 hover:text-sw-brand-light/60 transition-colors">+91-7032048807</a></p>
+              <p><a href="mailto:support@shashwininvestors.com" className="text-blue-400/50 hover:text-blue-400/80 transition-colors">support@shashwininvestors.com</a></p>
+              <p><a href="tel:+917032048807" className="text-blue-400/50 hover:text-blue-400/80 transition-colors">+91-7032048807</a></p>
             </address>
             <div className="flex gap-2 mt-5">
               {socials.map((s) => (
                 <a key={s.label} href="#" aria-label={s.label}
-                  className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/[0.02] border border-white/[0.04] text-white/20 hover:bg-sw-brand/10 hover:text-white/50 hover:border-sw-brand/15 transition-all">
+                  className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/[0.04] border border-white/[0.06] text-white/25 hover:bg-blue-500/15 hover:text-blue-400/70 hover:border-blue-500/20 transition-all">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={s.d}/></svg>
                 </a>
               ))}
@@ -124,12 +124,12 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="py-5 border-t border-white/[0.03]">
+      <div className="py-5 border-t border-white/[0.06]">
         <div className="max-w-[1280px] mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-[10px] sm:text-[11px] text-white/15">&copy; 2026 Shashwin Investors. All Rights Reserved.</p>
+          <p className="text-[10px] sm:text-[11px] text-white/20">&copy; 2026 Shashwin Investors. All Rights Reserved.</p>
           <div className="flex gap-5">
             {["Disclaimer","Terms & Conditions","Privacy Policy"].map((t) => (
-              <a key={t} href="#" className="text-[10px] sm:text-[11px] text-white/15 hover:text-white/30 transition-colors">{t}</a>
+              <a key={t} href="#" className="text-[10px] sm:text-[11px] text-white/20 hover:text-white/40 transition-colors">{t}</a>
             ))}
           </div>
         </div>
