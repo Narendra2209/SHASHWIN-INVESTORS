@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: shashwin-investors
+    name: sks-investors
     runtime: node
     region: singapore
     plan: free

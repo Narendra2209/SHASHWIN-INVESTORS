@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Shashwin Investors — a SEBI-registered research analyst firm providing disciplined, research-backed market advisory.",
+  description: "Learn about SKS Investors — a SEBI-registered research analyst firm providing disciplined, research-backed market advisory.",
 };
 
 const values = [
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <span className="text-white/50">Since 2008</span>
             </h1>
             <p className="text-[15px] sm:text-[17px] text-white/55 leading-relaxed max-w-xl">
-              Shashwin Investors delivers disciplined, research-backed <span className="text-amber-300/90 font-semibold">option trading</span> strategies with clear entries, exits, and strict risk controls — trusted by 15K+ traders across India.
+              SKS Investors delivers disciplined, research-backed <span className="text-amber-300/90 font-semibold">option trading</span> strategies with clear entries, exits, and strict risk controls — trusted by 15K+ traders across India.
             </p>
           </div>
         </div>

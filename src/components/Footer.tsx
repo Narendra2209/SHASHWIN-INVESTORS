@@ -41,7 +41,7 @@ export default function Footer() {
             <span className="option-highlight">Option Trading?</span>
           </h2>
           <p className="text-[14px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">
-            Join 15K+ traders who trust Shashwin Investors for research-backed option trading advisory.
+            Join 15K+ traders who trust SKS Investors for research-backed option trading advisory.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact" className="btn-3d btn-3d-gold inline-flex items-center justify-center px-8 py-[14px] text-[14px]">
@@ -127,7 +127,7 @@ export default function Footer() {
             <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Contact</h4>
             <address className="not-italic space-y-3 text-[12px] text-white/25 leading-relaxed">
               <p>8th Phase, JP Nagar, Bangalore, Karnataka</p>
-              <p><a href="mailto:support@shashwininvestors.com" className="text-emerald-400/50 hover:text-emerald-400/80 transition-colors">support@shashwininvestors.com</a></p>
+              <p><a href="mailto:support@sksinvestors.com" className="text-emerald-400/50 hover:text-emerald-400/80 transition-colors">support@sksinvestors.com</a></p>
               <p><a href="tel:+919743556886" className="text-emerald-400/50 hover:text-emerald-400/80 transition-colors">+91-9743556886</a></p>
             </address>
             <div className="flex gap-2 mt-5">
@@ -145,7 +145,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="py-5 border-t border-white/[0.06]">
         <div className="max-w-[1280px] mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-[10px] sm:text-[11px] text-white/20">&copy; 2026 Shashwin Investors. All Rights Reserved.</p>
+          <p className="text-[10px] sm:text-[11px] text-white/20">&copy; 2026 SKS Investors. All Rights Reserved.</p>
           <div className="flex gap-5">
             {["Disclaimer", "Terms & Conditions", "Privacy Policy"].map((t) => (
               <a key={t} href="#" className="text-[10px] sm:text-[11px] text-white/20 hover:text-white/40 transition-colors">{t}</a>

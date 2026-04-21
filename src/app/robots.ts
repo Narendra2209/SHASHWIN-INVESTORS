@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://shashwininvestors.com/sitemap.xml",
+    sitemap: "https://sksinvestors.com/sitemap.xml",
   };
 }

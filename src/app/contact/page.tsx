@@ -3,13 +3,13 @@ import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Shashwin Investors — SEBI registered research analyst. Call, WhatsApp, or submit a form for a free consultation.",
+  description: "Get in touch with SKS Investors — SEBI registered research analyst. Call, WhatsApp, or submit a form for a free consultation.",
 };
 
 const methods = [
   { title: "Call Us", desc: "Speak directly with our team", value: "+91-9743556886", href: "tel:+919743556886", icon: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.37 1.85.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.96.33 1.93.57 2.81.7A2 2 0 0 1 22 16.92z", color: "#047857" },
   { title: "WhatsApp", desc: "Message us anytime", value: "+91-9743556886", href: "https://wa.me/919743556886?text=Hi%2C%20I%20am%20interested%20in%20your%20option%20trading%20advisory.", icon: "M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z", color: "#25D366" },
-  { title: "Email", desc: "Write to us", value: "support@shashwininvestors.com", href: "mailto:support@shashwininvestors.com", icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6", color: "#b8860b" },
+  { title: "Email", desc: "Write to us", value: "support@sksinvestors.com", href: "mailto:support@sksinvestors.com", icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6", color: "#b8860b" },
 ];
 
 export default function ContactPage() {
