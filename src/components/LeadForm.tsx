@@ -3,7 +3,7 @@
 import type React from "react";
 import { showToast } from "./Toast";
 
-const WHATSAPP_NUMBER = "917032048807";
+const WHATSAPP_NUMBER = "919743556886";
 
 const capitalLabels: Record<string, string> = {
   "below-50k": "Below 50K",
@@ -43,7 +43,7 @@ export default function LeadForm({ buttonLabel = "Send", variant = "light" }: { 
 
   const inputClass = "sw-input";
   const btnClass = variant === "light"
-    ? "w-full h-[54px] text-[15px] font-extrabold cursor-pointer transition-all rounded-2xl text-white bg-gradient-to-r from-[#1e40af] to-[#3b82f6] hover:from-[#1e3a8a] hover:to-[#2563eb] shadow-lg shadow-blue-900/20 hover:shadow-blue-900/30 hover:-translate-y-0.5 active:translate-y-0"
+    ? "w-full h-[54px] text-[15px] font-extrabold cursor-pointer transition-all rounded-2xl text-white bg-gradient-to-r from-[#047857] to-[#10b981] hover:from-[#064e3b] hover:to-[#059669] shadow-lg shadow-emerald-900/20 hover:shadow-emerald-900/30 hover:-translate-y-0.5 active:translate-y-0"
     : "btn-cta w-full h-[54px] text-[15px] font-extrabold cursor-pointer transition-all";
 
   return (
@@ -57,10 +57,10 @@ export default function LeadForm({ buttonLabel = "Send", variant = "light" }: { 
         <option value="1l-5l">1 Lakh – 5 Lakh</option>
         <option value="above-5l">Above 5 Lakh</option>
       </select>
-      <select name="segment" required className={inputClass} aria-label="Trading Segment" defaultValue="">
+      <select name="segment" required className={inputClass} aria-label="Trading Segment" defaultValue="options">
         <option value="" disabled>Select Segment</option>
+        <option value="options">Option Trading (Recommended)</option>
         <option value="equity">Equity</option>
-        <option value="options">Options</option>
         <option value="futures">Futures</option>
         <option value="index">Index</option>
         <option value="commodity">Commodity</option>

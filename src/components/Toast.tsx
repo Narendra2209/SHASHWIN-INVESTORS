@@ -20,7 +20,7 @@ export default function Toast() {
 
   return (
     <div
-      className={`fixed bottom-[100px] left-1/2 -translate-x-1/2 px-7 py-3.5 rounded-[10px] text-sm font-semibold text-white whitespace-nowrap z-[1100] border border-blue-700/20 transition-all duration-300 pointer-events-none ${
+      className={`fixed bottom-[100px] left-1/2 -translate-x-1/2 px-7 py-3.5 rounded-[10px] text-sm font-semibold text-white whitespace-nowrap z-[1100] border border-emerald-700/20 transition-all duration-300 pointer-events-none ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
       style={{ background: "rgba(15,23,42,0.95)", backdropFilter: "blur(10px)" }}

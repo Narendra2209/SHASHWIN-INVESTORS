@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const serviceLinks = [
+  { label: "Option Trading", href: "/services", highlight: true },
   { label: "Index Option Service", href: "/services" },
-  { label: "Stock Option Service", href: "/services" },
   { label: "Stock Future Service", href: "/services" },
   { label: "Stock Cash Service", href: "/services" },
   { label: "Commodity Service", href: "/services" },
@@ -20,28 +20,34 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#0f172a] overflow-hidden">
-      {/* Top line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
+    <footer className="relative overflow-hidden" style={{
+      background: "linear-gradient(180deg, #022c22 0%, #033a30 50%, #01120f 100%)",
+    }}>
+      {/* Top accent */}
+      <div className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(4,120,87,0.4), rgba(184,134,11,0.3), transparent)" }} />
 
       {/* CTA Banner */}
       <div className="relative py-20 sm:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-amber-900/10" />
-        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.6) 0.5px, transparent 0.5px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0" style={{
+          background:
+            "radial-gradient(ellipse 800px 500px at 25% 40%, rgba(4,120,87,0.22), transparent 60%)," +
+            "radial-gradient(ellipse 600px 400px at 80% 60%, rgba(212,160,23,0.14), transparent 60%)",
+        }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(16,185,129,0.08), transparent 65%)", filter: "blur(50px)", animation: "orb-drift 20s ease-in-out infinite" }} />
+        <div className="absolute inset-0 opacity-[0.025]" style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.6) 0.5px, transparent 0.5px)", backgroundSize: "48px 48px" }} />
         <div className="max-w-[680px] mx-auto px-6 text-center relative z-10">
           <h2 className="text-[26px] sm:text-[34px] md:text-[42px] font-extrabold leading-[1.08] tracking-[-0.03em] mb-5">
-            <span className="text-white/90">Ready to</span>{" "}
-            <span className="text-[#d4a017]">Elevate</span>{" "}
-            <span className="text-white/50">Your Trading?</span>
+            <span className="text-white/90">Ready to Master</span><br />
+            <span className="option-highlight">Option Trading?</span>
           </h2>
           <p className="text-[14px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">
-            Join hundreds of traders who trust Shashwin Investors for research-backed insights.
+            Join 15K+ traders who trust Shashwin Investors for research-backed option trading advisory.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/contact" className="btn-cta inline-flex items-center justify-center px-8 py-[14px] text-[14px] font-extrabold transition-all">
+            <Link href="/contact" className="btn-3d btn-3d-gold inline-flex items-center justify-center px-8 py-[14px] text-[14px]">
               Get Started Today
             </Link>
-            <a href="tel:+917032048807" className="btn-brand inline-flex items-center justify-center gap-2 px-8 py-[14px] text-[14px] font-bold transition-all">
+            <a href="tel:+919743556886" className="btn-3d inline-flex items-center justify-center gap-2 px-8 py-[14px] text-[14px]">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.37 1.85.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.96.33 1.93.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               Call Us
             </a>
@@ -71,7 +77,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2.5 group mb-5">
-              <div className="w-8 h-8 rounded-[8px] bg-gradient-to-br from-[#1e40af] to-[#b8860b] flex items-center justify-center shadow-md">
+              <div className="w-8 h-8 rounded-[8px] bg-gradient-to-br from-[#047857] to-[#b8860b] flex items-center justify-center shadow-md">
                 <svg width="16" height="16" viewBox="0 0 36 36" fill="none"><path d="M10 24L16 14L20 20L26 10" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
               <div className="flex flex-col leading-none">
@@ -79,8 +85,8 @@ export default function Footer() {
                 <span className="text-[8px] font-semibold tracking-[0.15em] uppercase text-[#d4a017]/60">Investors</span>
               </div>
             </Link>
-            <p className="text-[11px] text-white/30 mb-1">SEBI Reg: <span className="text-blue-400/50 font-semibold">INH000XXXXXX</span></p>
-            <p className="text-[12px] text-white/25 leading-relaxed">Research-backed stock market advisory by a SEBI-registered research analyst.</p>
+            <p className="text-[11px] text-[#d4a017]/70 font-bold uppercase tracking-[0.12em] mb-2">SEBI Registered Research Analyst</p>
+            <p className="text-[12px] text-white/25 leading-relaxed">Research-backed <span className="text-[#d4a017]/80 font-semibold">option trading</span> advisory by SEBI-registered analysts with 18+ years of experience.</p>
           </div>
 
           {/* Services */}
@@ -88,7 +94,12 @@ export default function Footer() {
             <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Services</h4>
             <ul className="space-y-2.5">
               {serviceLinks.map((s) => (
-                <li key={s.label}><Link href={s.href} className="text-[12px] text-white/25 hover:text-blue-400/70 transition-colors">{s.label}</Link></li>
+                <li key={s.label}>
+                  <Link href={s.href} className={`text-[12px] transition-colors ${s.highlight ? "text-[#d4a017]/80 font-bold hover:text-[#d4a017]" : "text-white/25 hover:text-emerald-400/70"}`}>
+                    {s.highlight && <span className="inline-block w-1 h-1 rounded-full bg-[#d4a017] mr-2 align-middle" />}
+                    {s.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -98,7 +109,7 @@ export default function Footer() {
             <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Links</h4>
             <ul className="space-y-2.5">
               {usefulLinks.map((l) => (
-                <li key={l}><a href="#" className="text-[12px] text-white/25 hover:text-blue-400/70 transition-colors">{l}</a></li>
+                <li key={l}><a href="#" className="text-[12px] text-white/25 hover:text-emerald-400/70 transition-colors">{l}</a></li>
               ))}
             </ul>
           </div>
@@ -107,14 +118,14 @@ export default function Footer() {
           <div>
             <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Contact</h4>
             <address className="not-italic space-y-3 text-[12px] text-white/25 leading-relaxed">
-              <p>A/221, 1st Floor, Shiv Sai Co-op Housing Society, Kurla West, Mumbai, MH 400070</p>
-              <p><a href="mailto:support@shashwininvestors.com" className="text-blue-400/50 hover:text-blue-400/80 transition-colors">support@shashwininvestors.com</a></p>
-              <p><a href="tel:+917032048807" className="text-blue-400/50 hover:text-blue-400/80 transition-colors">+91-7032048807</a></p>
+              <p>8th Phase, JP Nagar, Bangalore, Karnataka<br /><span className="text-white/20">Near BESCOM bus stop</span></p>
+              <p><a href="mailto:support@shashwininvestors.com" className="text-emerald-400/50 hover:text-emerald-400/80 transition-colors">support@shashwininvestors.com</a></p>
+              <p><a href="tel:+919743556886" className="text-emerald-400/50 hover:text-emerald-400/80 transition-colors">+91-9743556886</a></p>
             </address>
             <div className="flex gap-2 mt-5">
               {socials.map((s) => (
                 <a key={s.label} href="#" aria-label={s.label}
-                  className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/[0.04] border border-white/[0.06] text-white/25 hover:bg-blue-500/15 hover:text-blue-400/70 hover:border-blue-500/20 transition-all">
+                  className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/[0.04] border border-white/[0.06] text-white/25 hover:bg-emerald-500/15 hover:text-emerald-400/70 hover:border-emerald-500/20 transition-all">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={s.d}/></svg>
                 </a>
               ))}

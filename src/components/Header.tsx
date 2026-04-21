@@ -40,25 +40,24 @@ export default function Header() {
         scrolled ? "h-[64px]" : "h-[72px]"
       }`}
       style={{
-        background: scrolled ? "rgba(255,255,255,0.97)" : "rgba(255,255,255,0.85)",
-        backdropFilter: "blur(20px) saturate(1.2)",
-        WebkitBackdropFilter: "blur(20px) saturate(1.2)",
-        borderBottom: scrolled ? "1px solid rgba(15,23,42,0.08)" : "1px solid transparent",
-        boxShadow: scrolled ? "0 1px 12px rgba(15,23,42,0.06)" : "none",
+        background: "#ffffff",
+        borderBottom: "1px solid rgba(15,23,42,0.06)",
+        boxShadow: scrolled ? "0 4px 24px -6px rgba(4,120,87,0.15), 0 0 0 1px rgba(4,120,87,0.04) inset" : "0 1px 0 rgba(15,23,42,0.04)",
       }}
     >
       <div className="max-w-[1280px] mx-auto px-6 flex items-center h-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0 group mr-auto lg:mr-0">
-          <div className="relative w-9 h-9 rounded-[10px] overflow-hidden shadow-md shadow-blue-900/10 group-hover:shadow-blue-900/20 transition-shadow">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#1e40af] to-[#b8860b]" />
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" className="relative z-10">
+          <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-emerald-900/15 group-hover:shadow-emerald-900/30 transition-all duration-400 group-hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#064e3b] via-[#047857] to-[#b8860b]" />
+            <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent 60%)" }} />
+            <svg width="40" height="40" viewBox="0 0 36 36" fill="none" className="relative z-10">
               <path d="M10 24L16 14L20 20L26 10" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div className="flex flex-col leading-none">
-            <span className="text-[15px] font-extrabold tracking-tight text-[#0f172a]">Shashwin</span>
-            <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-[#b8860b]">Investors</span>
+            <span className="text-[16px] font-extrabold tracking-tight bg-gradient-to-r from-[#0f172a] to-[#047857] bg-clip-text text-transparent">Shashwin</span>
+            <span className="text-[10px] font-bold tracking-[0.18em] uppercase text-[#b8860b] mt-0.5">Investors</span>
           </div>
         </Link>
 
@@ -73,7 +72,7 @@ export default function Header() {
                     href={l.href}
                     className={`relative px-5 py-2 text-[13px] font-semibold rounded-full transition-all duration-250 tracking-tight ${
                       active
-                        ? "text-[#1e40af] bg-blue-50"
+                        ? "text-[#047857] bg-emerald-50"
                         : "text-[#64748b] hover:text-[#0f172a] hover:bg-slate-50"
                     }`}
                   >
@@ -90,11 +89,18 @@ export default function Header() {
 
         {/* CTA */}
         <a
-          href="tel:+917032048807"
-          className="hidden lg:inline-flex items-center gap-2 ml-auto px-5 py-2 text-[12px] font-bold rounded-full text-[#1e40af] transition-all duration-250 hover:text-white border border-blue-200 hover:border-[#1e40af] hover:bg-[#1e40af]"
+          href="tel:+919743556886"
+          className="hidden lg:inline-flex items-center gap-2 ml-auto px-5 py-2.5 text-[12px] font-bold rounded-full text-white transition-all duration-300 hover:-translate-y-0.5"
+          style={{
+            background: "linear-gradient(135deg, #064e3b, #047857, #10b981)",
+            boxShadow: "0 4px 14px -2px rgba(4,120,87,0.35), 0 0 0 1px rgba(16,185,129,0.2) inset",
+          }}
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_6px_rgba(34,197,94,0.5)]" />
-          +91-7032048807
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-70" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
+          </span>
+          +91-9743556886
         </a>
 
         {/* Burger */}
@@ -126,7 +132,7 @@ export default function Header() {
                   <Link
                     href={l.href}
                     className={`flex items-center gap-3 text-[17px] font-semibold px-5 py-4 rounded-2xl transition-all tracking-tight ${
-                      active ? "text-[#1e40af] bg-blue-50" : "text-[#64748b] hover:text-[#0f172a] hover:bg-slate-50"
+                      active ? "text-[#047857] bg-emerald-50" : "text-[#64748b] hover:text-[#0f172a] hover:bg-slate-50"
                     }`}
                   >
                     {active && <span className="w-1.5 h-1.5 rounded-full bg-[#b8860b] shadow-[0_0_6px_rgba(184,134,11,0.5)]" />}
@@ -137,10 +143,10 @@ export default function Header() {
             })}
           </ul>
           <div className="mt-auto pb-8 space-y-3">
-            <a href="tel:+917032048807" className="flex items-center justify-center gap-2 w-full py-4 text-[15px] font-bold rounded-2xl bg-gradient-to-r from-[#1e40af] to-[#3b82f6] text-white shadow-lg shadow-blue-900/15">
-              Call: +91-7032048807
+            <a href="tel:+919743556886" className="flex items-center justify-center gap-2 w-full py-4 text-[15px] font-bold rounded-2xl bg-gradient-to-r from-[#047857] to-[#10b981] text-white shadow-lg shadow-emerald-900/15">
+              Call: +91-9743556886
             </a>
-            <a href="https://wa.me/917032048807?text=Hi%2C%20I%20am%20interested%20in%20your%20advisory." target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/919743556886?text=Hi%2C%20I%20am%20interested%20in%20your%20advisory." target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-4 text-[15px] font-bold rounded-2xl text-white"
               style={{ background: "linear-gradient(135deg, #25D366, #128C7E)" }}>
               WhatsApp Us
