@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import Toast from "@/components/Toast";
+import RiskDisclosureModal from "@/components/RiskDisclosureModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,8 +15,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Shashwin Investors — Option Trading Experts | SEBI Registered Research Analyst",
-    template: "%s | Shashwin Investors",
+    default: "sksinvestors — Option Trading Experts | SEBI Registered Research Analyst",
+    template: "%s | sksinvestors",
   },
   description:
     "We are experts in option trading. Research-driven option strategies from SEBI-registered research analysts with 18+ years of experience and 90% accuracy.",
@@ -89,6 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <FloatingButtons />
         <Toast />
+        <RiskDisclosureModal />
       </body>
     </html>
   );

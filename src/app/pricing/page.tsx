@@ -4,7 +4,7 @@ import TiltCard from "@/components/TiltCard";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Explore our SEBI-compliant trading advisory packages — Equity, Option, Future, Commodity, Index, and HNI packages with 24x7 support.",
+  description: "Explore our SEBI-compliant trading advisory packages — Equity, Option, Future, Commodity, and Index packages with 24x7 support.",
 };
 
 const packages = [
@@ -13,7 +13,6 @@ const packages = [
   { name: "Future Package", type: "future", color: "#047857", featured: false, flagship: false },
   { name: "Commodity Package", type: "commodity", color: "#b8860b", featured: false, flagship: false },
   { name: "Index Package", type: "index", color: "#047857", featured: false, flagship: false },
-  { name: "HNI Package", type: "HNI", color: "#b8860b", featured: true, flagship: false },
 ];
 
 const faqs = [

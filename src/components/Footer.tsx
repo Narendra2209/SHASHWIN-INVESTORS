@@ -9,7 +9,7 @@ const serviceLinks = [
   { label: "Intraday Service", href: "/services" },
 ];
 
-const usefulLinks = ["Disclosures","Grievance Redressal Policy","Escalation Matrix","Investor Charter","Regulatory Information","Refund Policy"];
+const usefulLinks = ["Disclosures", "Grievance Redressal Policy", "Escalation Matrix", "Investor Charter", "Regulatory Information", "Refund Policy"];
 
 const socials = [
   { label: "Facebook", d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" },
@@ -48,7 +48,7 @@ export default function Footer() {
               Get Started Today
             </Link>
             <a href="tel:+919743556886" className="btn-3d inline-flex items-center justify-center gap-2 px-8 py-[14px] text-[14px]">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.37 1.85.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.96.33 1.93.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.37 1.85.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.96.33 1.93.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
               Call Us
             </a>
           </div>
@@ -59,14 +59,15 @@ export default function Footer() {
       <div className="py-8 sm:py-10 bg-amber-950/30 border-t border-amber-800/20">
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="flex items-center gap-2 mb-4">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d4a017" strokeWidth="2" strokeLinecap="round" opacity="0.6"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d4a017" strokeWidth="2" strokeLinecap="round" opacity="0.6"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" /><line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" /></svg>
             <h3 className="text-[13px] font-bold text-[#d4a017]/80">Disclaimer</h3>
           </div>
           <ul className="list-disc pl-5 space-y-1.5 text-[11px] sm:text-[12px] text-white/35 leading-relaxed">
             <li>Investment in securities market is subject to market risk. No guaranteed profit. Past performance is not indicative of future results.</li>
-            <li>Fees should only be paid to Shashwin Investors company accounts.</li>
-            <li>Risk of loss in trading can be substantial. Consider whether trading is appropriate for your financial condition.</li>
-            <li>Shashwin Investors shall not be held responsible for losses incurred from trading based on our recommendations.</li>
+            <li>9 out of 10 individual traders in equity Futures and Options Segment, incurred net losses.</li>
+            <li>On an average, loss makers registered net trading loss close to 50,000.</li>
+            <li>Over and above the net trading losses incurred, loss makers expended an additional 28% of net trading losses as transaction costs.</li>
+            <li>Those making net trading profits, incurred between 15% to 50% of such profits as transaction costs.</li>
           </ul>
         </div>
       </div>
@@ -76,13 +77,20 @@ export default function Footer() {
         <div className="max-w-[1280px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2.5 group mb-5">
-              <div className="w-8 h-8 rounded-[8px] bg-gradient-to-br from-[#047857] to-[#b8860b] flex items-center justify-center shadow-md">
-                <svg width="16" height="16" viewBox="0 0 36 36" fill="none"><path d="M10 24L16 14L20 20L26 10" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <Link href="/" className="flex items-center gap-2.5 group mb-5" aria-label="sksinvestors home">
+              <div className="relative w-9 h-9 rounded-[9px] overflow-hidden shadow-md">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#064e3b] via-[#047857] to-[#b8860b]" />
+                <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent 60%)" }} />
+                <svg viewBox="0 0 40 40" fill="none" className="relative z-10 w-full h-full">
+                  <path d="M6 29 L14 22 L20 25 L32 11" stroke="#fde68a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="0.55" />
+                  <path d="M27 11 L32 11 L32 16" stroke="#fde68a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="0.55" />
+                  <path d="M26.5 14.2 C26.5 11.6 23.8 10 20 10 C16.4 10 14 11.6 14 14 C14 16.5 16.8 17.2 20 18 C23.2 18.8 26 19.5 26 22.2 C26 24.8 23.4 26.5 20 26.5 C16.4 26.5 14 25 14 22.6" stroke="#ffffff" strokeWidth="2.9" strokeLinecap="round" fill="none" />
+                  <circle cx="30.5" cy="10.5" r="1.8" fill="#fbbf24" />
+                </svg>
               </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-[13px] font-extrabold text-white/85">Shashwin</span>
-                <span className="text-[8px] font-semibold tracking-[0.15em] uppercase text-[#d4a017]/60">Investors</span>
+              <div className="flex leading-none items-baseline gap-[1px]">
+                <span className="text-[14px] font-black text-white/90 lowercase">sks</span>
+                <span className="text-[14px] font-black lowercase bg-gradient-to-r from-emerald-300 to-amber-300 bg-clip-text text-transparent">investors</span>
               </div>
             </Link>
             <p className="text-[11px] text-[#d4a017]/70 font-bold uppercase tracking-[0.12em] mb-2">SEBI Registered Research Analyst</p>
@@ -118,7 +126,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[11px] font-bold mb-5 text-white/40 tracking-[0.15em] uppercase">Contact</h4>
             <address className="not-italic space-y-3 text-[12px] text-white/25 leading-relaxed">
-              <p>8th Phase, JP Nagar, Bangalore, Karnataka<br /><span className="text-white/20">Near BESCOM bus stop</span></p>
+              <p>8th Phase, JP Nagar, Bangalore, Karnataka</p>
               <p><a href="mailto:support@shashwininvestors.com" className="text-emerald-400/50 hover:text-emerald-400/80 transition-colors">support@shashwininvestors.com</a></p>
               <p><a href="tel:+919743556886" className="text-emerald-400/50 hover:text-emerald-400/80 transition-colors">+91-9743556886</a></p>
             </address>
@@ -126,7 +134,7 @@ export default function Footer() {
               {socials.map((s) => (
                 <a key={s.label} href="#" aria-label={s.label}
                   className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/[0.04] border border-white/[0.06] text-white/25 hover:bg-emerald-500/15 hover:text-emerald-400/70 hover:border-emerald-500/20 transition-all">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={s.d}/></svg>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={s.d} /></svg>
                 </a>
               ))}
             </div>
@@ -139,7 +147,7 @@ export default function Footer() {
         <div className="max-w-[1280px] mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-[10px] sm:text-[11px] text-white/20">&copy; 2026 Shashwin Investors. All Rights Reserved.</p>
           <div className="flex gap-5">
-            {["Disclaimer","Terms & Conditions","Privacy Policy"].map((t) => (
+            {["Disclaimer", "Terms & Conditions", "Privacy Policy"].map((t) => (
               <a key={t} href="#" className="text-[10px] sm:text-[11px] text-white/20 hover:text-white/40 transition-colors">{t}</a>
             ))}
           </div>

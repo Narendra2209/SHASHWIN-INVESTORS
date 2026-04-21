@@ -47,17 +47,23 @@ export default function Header() {
     >
       <div className="max-w-[1280px] mx-auto px-6 flex items-center h-full">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0 group mr-auto lg:mr-0">
+        <Link href="/" className="flex items-center gap-3 shrink-0 group mr-auto lg:mr-0" aria-label="sksinvestors home">
           <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-emerald-900/15 group-hover:shadow-emerald-900/30 transition-all duration-400 group-hover:scale-105">
             <div className="absolute inset-0 bg-gradient-to-br from-[#064e3b] via-[#047857] to-[#b8860b]" />
             <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent 60%)" }} />
-            <svg width="40" height="40" viewBox="0 0 36 36" fill="none" className="relative z-10">
-              <path d="M10 24L16 14L20 20L26 10" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            <svg viewBox="0 0 40 40" fill="none" className="relative z-10 w-full h-full">
+              {/* upward trend line */}
+              <path d="M6 29 L14 22 L20 25 L32 11" stroke="#fde68a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="0.55" />
+              <path d="M27 11 L32 11 L32 16" stroke="#fde68a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="0.55" />
+              {/* stylized S */}
+              <path d="M26.5 14.2 C26.5 11.6 23.8 10 20 10 C16.4 10 14 11.6 14 14 C14 16.5 16.8 17.2 20 18 C23.2 18.8 26 19.5 26 22.2 C26 24.8 23.4 26.5 20 26.5 C16.4 26.5 14 25 14 22.6" stroke="#ffffff" strokeWidth="2.9" strokeLinecap="round" fill="none" />
+              {/* gold accent dot */}
+              <circle cx="30.5" cy="10.5" r="1.8" fill="#fbbf24" />
             </svg>
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-[16px] font-extrabold tracking-tight bg-gradient-to-r from-[#0f172a] to-[#047857] bg-clip-text text-transparent">Shashwin</span>
-            <span className="text-[10px] font-bold tracking-[0.18em] uppercase text-[#b8860b] mt-0.5">Investors</span>
+          <div className="flex leading-none items-baseline gap-[1px]">
+            <span className="text-[17px] font-black tracking-tight text-[#0f172a] lowercase">sks</span>
+            <span className="text-[17px] font-black tracking-tight bg-gradient-to-r from-[#047857] to-[#b8860b] bg-clip-text text-transparent lowercase">investors</span>
           </div>
         </Link>
 
